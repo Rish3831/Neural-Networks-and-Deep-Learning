@@ -69,6 +69,7 @@ The RMSE values for the training and validation sets are plotted over the epochs
 ## Results and Observations
 The output weights (w2) and input weights (w1) are printed, representing the final learned weights.
 The Test RMSE reflects the model's final error on unseen data, indicating its predictive performance.
+
 **RMSE Trend:** The plot of RMSE over epochs helps visualize if the model is learning effectively and if overfitting occurs on the validation set.
 
 ## Conclusion
