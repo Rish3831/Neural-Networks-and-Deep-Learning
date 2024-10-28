@@ -18,9 +18,29 @@ The data file ce889_dataCollection.csv is loaded, and the dataset is prepared by
 
 Removing duplicates and NaN values.
 Normalizing each feature to bring all values between 0 and 1.
-Splitting the data into three sets:
-70% Training set
-15% Validation set
-15% Test set
+Splitting the data into three sets which are 70% Training set,15% Validation set and 15% Test set.
+
+## 2. Neural Network Parameters
+The following parameters can be set by the user:
+
+Number of neurons in the hidden layer.
+
+Lambda (λ) for activation function scaling.
+
+Number of epochs for training.
+
+Eta (η), the learning rate for weight updates.
+
+These inputs initialize the model with a user-defined structure and training configurations.
+
+## 3. Model Initialization
+   
+Random weights are assigned:
+
+Between input and hidden layers (w1).
+
+Between hidden and output layers (w2).
+
+
 
 
