@@ -41,6 +41,21 @@ Between input and hidden layers (w1).
 
 Between hidden and output layers (w2).
 
+## 4. Forward Pass Calculations
+For each sample in the data:
+
+Weighted sums are computed at each layer. 
+
+**Activation functions:** A sigmoid function scales the outputs at both hidden and output layers.
+
+## 5. Backpropagation and Weight Updates
+The error for each output is calculated and used for weight adjustments:
+
+**Output Layer Gradients:** Calculated to update weights from hidden to output layer.
+**Hidden Layer Gradients:** Calculated to update weights from input to hidden layer.
+
+The weights are updated using the gradient descent method with the specified learning rate (η).
+
 
 
 
