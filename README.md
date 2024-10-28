@@ -23,13 +23,13 @@ Splitting the data into three sets which are 70% Training set,15% Validation set
 ## 2. Neural Network Parameters
 The following parameters can be set by the user:
 
-Number of neurons in the hidden layer.
+**Number of neurons** in the hidden layer.
 
-Lambda (λ) for activation function scaling.
+**Lambda (λ)** for activation function scaling.
 
-Number of epochs for training.
+**Number of epochs** for training.
 
-Eta (η), the learning rate for weight updates.
+**Eta (η)**, the learning rate for weight updates.
 
 These inputs initialize the model with a user-defined structure and training configurations.
 
@@ -52,10 +52,27 @@ Weighted sums are computed at each layer.
 The error for each output is calculated and used for weight adjustments:
 
 **Output Layer Gradients:** Calculated to update weights from hidden to output layer.
+
 **Hidden Layer Gradients:** Calculated to update weights from input to hidden layer.
 
 The weights are updated using the gradient descent method with the specified learning rate (η).
 
+## 6. RMSE Calculation
+After each epoch, the model calculates the RMSE for both the training and validation sets. These values are stored for later visualization.
+
+## 7. Testing and Final RMSE Calculation
+Using the final weights, the model evaluates performance on the test set, printing the final RMSE value.
+
+## 8. Plotting RMSE
+The RMSE values for the training and validation sets are plotted over the epochs to observe model convergence.
+
+## Results and Observations
+The output weights (w2) and input weights (w1) are printed, representing the final learned weights.
+The Test RMSE reflects the model's final error on unseen data, indicating its predictive performance.
+**RMSE Trend:** The plot of RMSE over epochs helps visualize if the model is learning effectively and if overfitting occurs on the validation set.
+
+## Conclusion
+This project demonstrates a basic feedforward neural network with gradient descent, RMSE evaluation, and weight updates. The resulting RMSE values give insight into model performance, with RMSE convergence indicating effective training.
 
 
 
